@@ -4,7 +4,7 @@ This is the codebase for J4R: Learning to Judge with Equivalent Initial State Gr
 - 📚 Paper: [arXiv](https://arxiv.org/abs/2505.13346)
 - 🔬 ReasoningJudgeBench: [Huggingface Dataset](https://huggingface.co/datasets/Salesforce/ReasoningJudgeBench)
 
-Evaluation code is released under Apache 2.0. ReasoningJudgeBench is released as CC-BY-NC-4.0.
+ReasoningJudgeBench is released as CC-BY-NC-4.0.
 
 ## 🔍 About J4R
 To keep pace with the increasing pace of large language models (LLM) development, model output evaluation has transitioned away from time-consuming human evaluation to automatic evaluation, where LLMs themselves are tasked with assessing and critiquing other model outputs. LLM-as-judge models are a class of generative evaluators that excel in evaluating relatively simple domains, like chat quality, but struggle in reasoning intensive domains where model responses contain more substantive and challenging content. To remedy existing judge shortcomings, we explore training judges with reinforcement learning (RL). We make three key contributions: (1) We propose the Equivalent Initial State Group Relative Policy Optimization (EIS-GRPO) algorithm, which allows us to train our judge to be robust to positional biases that arise in more complex evaluation settings. (2) We introduce ReasoningJudgeBench, a benchmark that evaluates judges in diverse reasoning settings not covered by prior work. (3) We train Judge for Reasoning (J4R), a 7B judge trained with EIS-GRPO that outperforms GPT-4o and the next best small judge by 6.7% and 9%, matching or exceeding the performance of larger GRPO-trained judges on both JudgeBench and ReasoningJudgeBench.
